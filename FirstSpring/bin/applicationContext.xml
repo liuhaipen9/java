@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop
+                     http://www.springframework.org/schema/aop/spring-aop.xsd">
+    	<bean id="goods" class="com.cn.dto.Goods">
+    		<property name="id" value="1"></property>
+    		<property name="num" value="123456"></property>
+    		<property name="name" value="bba"></property>
+    	</bean>
+    	<!-- autowire="byName"byName是根据被注入值的set方法去找的 -->
+    	<bean id="user" class="com.cn.dto.User" autowire="byName">
+    		<property name="id" value="1"></property>
+    		<property name="name" value="roc"></property>
+    		<property name="age" value="21"></property>
+    		
+    		<!-- <property name="goods" ref="goods"></property> -->
+    		<property name="list">
+    		<list>
+    			<value>sadfdsf</value>
+    			<value>etrewt</value>
+    		</list>
+    		</property>
+    	</bean>
+    	<bean id="log" class="com.cn.aop.AfterAop"></bean>
+    
+    	<bean id="testAop" class="com.cn.aop.TestAop"></bean>
+    	<!-- <bean id="loggerAspect" class="com.cn.firstSpring.TestSpring"></bean> -->
+    	
+  		<aop:config>
+  			<aop:pointcut id="loggerCutpoint" expression="execution(public void com.cn.aop.TestAopI.testBeforeAop(int))"/>
+  			<aop:advisor advice-ref="log" pointcut-ref="loggerCutpoint"/>
+  		</aop:config>
+  		
+  		<!--异常通知 -->
+  		<bean id="excep" class="com.cn.aop.ExcepersionAop"></bean>
+  		<aop:config>
+  			<aop:pointcut id="loggerCutpoint2" expression="execution(public void com.cn.aop.TestAopI.testExcepersionAop(..))"/>
+  			<aop:advisor advice-ref="excep" pointcut-ref="loggerCutpoint2"/>
+  		</aop:config>
+  		
+  		<!-- 环绕通知 -->
+  		<bean id="around" class="com.cn.aop.AroundAop"></bean>
+  		<aop:config>
+  			<aop:pointcut id="loggerCutpoint3" expression="execution(public * com.cn.aop.TestAopI.testAround())"/>
+  			<aop:advisor advice-ref="around" pointcut-ref="loggerCutpoint3"/>
+  		</aop:config>
+    	
+    </beans>

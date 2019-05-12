@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_vNm6gDJXEemGWZ93j0kSyg" name="Every-Data-Test">
+  <packagedElement xmi:type="uml:Package" xmi:id="_vNnhkDJXEemGWZ93j0kSyg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_vNnhkTJXEemGWZ93j0kSyg" name="cn">
+      <packagedElement xmi:type="uml:Package" xmi:id="_vNnhkjJXEemGWZ93j0kSyg" name="MyClass">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_vNnhkzJXEemGWZ93j0kSyg">
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_vNnhlDJXEemGWZ93j0kSyg">
+            <ownedAttribute xmi:id="_vNnhlTJXEemGWZ93j0kSyg" name="property" type="_vNnhmzJXEemGWZ93j0kSyg"/>
+            <ownedConnector xmi:id="_vNnhljJXEemGWZ93j0kSyg">
+              <end xmi:id="_vNnhlzJXEemGWZ93j0kSyg" role="_vNnhlTJXEemGWZ93j0kSyg" partWithPort="_vNnhlTJXEemGWZ93j0kSyg"/>
+            </ownedConnector>
+            <lifeline xmi:id="_vNnhmDJXEemGWZ93j0kSyg" name="self" represents="_vNnhlTJXEemGWZ93j0kSyg" coveredBy="_vNnhmTJXEemGWZ93j0kSyg _vNnhmjJXEemGWZ93j0kSyg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_vNnhmTJXEemGWZ93j0kSyg" name="Hamster( )" covered="_vNnhmDJXEemGWZ93j0kSyg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_vNnhmjJXEemGWZ93j0kSyg" name="Hamster( )" covered="_vNnhmDJXEemGWZ93j0kSyg"/>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vNnhmzJXEemGWZ93j0kSyg" name="Hamster"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

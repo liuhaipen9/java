@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_vOPzsDJXEemGWZ93j0kSyg" activeDiagram="_vOay0DJXEemGWZ93j0kSyg">
+  <model href="Hamster.uml#_vNm6gDJXEemGWZ93j0kSyg"/>
+  <diagrams xmi:id="_vOay0DJXEemGWZ93j0kSyg" position="0,0" size="100,100" name="Hamster" viewport="0,0">
+    <property xmi:id="_vXkHwDJXEemGWZ93j0kSyg" key="pageFormatName" value="A4"/>
+    <property xmi:id="_vXkHwTJXEemGWZ93j0kSyg" key="diagramWidth" value="840"/>
+    <property xmi:id="_vXkHwjJXEemGWZ93j0kSyg" key="diagramHeight" value="1180"/>
+    <property xmi:id="_vXkHwzJXEemGWZ93j0kSyg" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_vXkHxDJXEemGWZ93j0kSyg" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_vXkHxTJXEemGWZ93j0kSyg" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_vXkHxjJXEemGWZ93j0kSyg" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_vXkHxzJXEemGWZ93j0kSyg" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_vXkHyDJXEemGWZ93j0kSyg" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_vOay0TJXEemGWZ93j0kSyg" presentation="org.topcased.modeler.uml.sequencediagram">
+      <element href="Hamster.uml#_vNnhlDJXEemGWZ93j0kSyg"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_vddUYDJXEemGWZ93j0kSyg" position="13,40" size="200,300">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_vddUYTJXEemGWZ93j0kSyg" presentation="default">
+        <element href="Hamster.uml#_vNnhmDJXEemGWZ93j0kSyg"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_veqOQDJXEemGWZ93j0kSyg" position="63,40" size="20,50">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_veqOQTJXEemGWZ93j0kSyg" presentation="default">
+          <element href="Hamster.uml#_vNnhmTJXEemGWZ93j0kSyg"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_vetRkDJXEemGWZ93j0kSyg" position="63,105" size="20,50">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_vetRkTJXEemGWZ93j0kSyg" presentation="default">
+          <element href="Hamster.uml#_vNnhmjJXEemGWZ93j0kSyg"/>
+        </semanticModel>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>
